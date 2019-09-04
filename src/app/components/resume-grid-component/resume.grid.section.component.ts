@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'app-resume-grid-section',
@@ -14,11 +14,24 @@ export class ResumeGridSectionComponent implements OnInit {
     @Input() responsibilities: string[];
     @Input() toolsAndTechnologies : string;
     @Input() projects : string[];
+    @Input() isOpened : boolean = false;
 
+    @Output() onGridStateChanged = new EventEmitter();
+
+    
     constructor() { }
 
     ngOnInit() { 
 
+    }
+
+    get IsOpened(){
+        return this.isOpened;
+    }
+
+    toggleState(event){
+        event.preventDefault();
+        this.onGridStateChanged.emit();
     }
 
 }

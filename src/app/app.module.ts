@@ -11,6 +11,7 @@ import { ChartsModule } from 'ng2-charts';
 import { ResumeFactsPieChartComponent } from './components/resume-facts-charts/resume-facts-pie-chart-component/resume.facts.pie.chart.component';
 import { ResumeFactsRadarChartComponent } from './components/resume-facts-charts/resume-facts-radar-chart-component/resume.facts.radar.chat.component';
 import { ResumeGridSectionComponent } from './components/resume-grid-component/resume.grid.section.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ResumeGridSectionComponent } from './components/resume-grid-component/r
     BrowserAnimationsModule,
     MatGridListModule,
     MatTabsModule,
-    ChartsModule
+    ChartsModule,
+    MatExpansionModule
 
   ],
   providers: [],
