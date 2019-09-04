@@ -13,3 +13,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
     display: block;
     text-align: center;
 }
+
+.footer{
+    background-color: darkgray;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+}
