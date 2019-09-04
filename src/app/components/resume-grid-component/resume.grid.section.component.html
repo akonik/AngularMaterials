@@ -1,0 +1,59 @@
+<div class="grid-container">
+
+    <mat-grid-list cols="3" rowHeight="100px" rowHeight="20:1.5">
+        <mat-grid-tile class="tile-title tile-info">
+            Company Name:
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" class="tile-title tile-strong">
+            {{companyName}}
+        </mat-grid-tile>
+
+        <mat-grid-tile class="tile-info">
+            Involvement duration:
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" class="tile-description">
+            <div class="content-wrapper">{{involvementDuration}}</div>
+        </mat-grid-tile>
+
+        <mat-grid-tile class="tile-info">
+            Project role:
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" class="tile-description" class="tile-strong">
+            <div class="content-wrapper">
+                {{projectRole}}
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile [rowspan]="4" class="tile-info">
+            Responsibilities:
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4" class="tile-description">
+            <div class="content-wrapper">
+                <ul>
+                    <li *ngFor="let item of responsibilities">{{item}}</li>
+                </ul>
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile class="tile-info">
+            Tools& Technologies:
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" class="tile-description">
+            <div class="content-wrapper">
+                {{toolsAndTechnologies}}
+            </div>
+        </mat-grid-tile>
+
+
+        <mat-grid-tile [rowspan]="4" class="tile-info">
+            Projects:
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4" class="tile-description">
+            <div class="content-wrapper">
+                <ul>
+                    <li *ngFor="let item of projects">{{item}}</li>
+                </ul>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
