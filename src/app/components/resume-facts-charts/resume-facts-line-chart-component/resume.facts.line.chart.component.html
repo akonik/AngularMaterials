@@ -1,5 +1,6 @@
-<div class="content-wrapper">
-    <canvas baseChart  height="50" [datasets]="lineChartData" [labels]="lineChartLabels"
+<div>
+    <h4>Work time in companies (month)</h4>
+    <canvas baseChart  [datasets]="lineChartData" [labels]="lineChartLabels"
         [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType"
         [plugins]="lineChartPlugins">
     </canvas>

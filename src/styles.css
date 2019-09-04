@@ -20,3 +20,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
     line-height: 2em;
     text-align: center;
 }
+.content div{
+    max-width: 640px;
+    margin: 0 auto;
+}

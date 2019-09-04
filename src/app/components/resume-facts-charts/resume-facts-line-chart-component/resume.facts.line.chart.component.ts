@@ -9,7 +9,7 @@ import { Color, Label } from 'ng2-charts';
 export class ResumeFactsLineChartComponent implements OnInit {
 
     public lineChartData: ChartDataSets[] = [
-        { data: [11, 25, 36, 21], label: 'Work time in companies (months)' },
+        { data: [11, 25, 26, 21], label: 'Work time in companies (months)' },
     ];
     public lineChartLabels: Label[] = ['Iveonik Systems', 'FunBitGames', 'Storm Game Studio', 'Softum - Current'];
     public lineChartOptions: (ChartOptions) = {
